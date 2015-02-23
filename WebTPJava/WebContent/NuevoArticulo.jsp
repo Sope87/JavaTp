@@ -9,10 +9,11 @@
 <body>
 
 <form>
-		<table style="width: 411px;">
+		<table style="width:100%;">
 			<tr>
-				<td><input type="submit"></td>
+				<td></td>
 			</tr>
+			<p>Pruebaaa</p>
 			<tr>
 				<td></td>
 			</tr>

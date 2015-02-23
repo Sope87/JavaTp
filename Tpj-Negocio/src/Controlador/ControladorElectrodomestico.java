@@ -12,6 +12,8 @@ import Datos.*;
 
 
 public class ControladorElectrodomestico {
+	
+	
 	public void AltaModificacion(String tipo,String desc,String peso,String consumo,String carga,String color,String pulgadas,String precioBase,boolean tdt,Boolean esModificacion,int codEle)
 	{
 		if (tipo=="Lavarropas")
@@ -120,5 +122,12 @@ public void eliminarElectrodomestico(int codElectrodomestico)
 {
 	fachadaPersistencia.eliminarElectrodomestido(codElectrodomestico);
 	}
+
+public ArrayList<Electrodomestico> getAllElectrodomestico(int montoMin, int montoMax)
+{
+	
+ArrayList<Electrodomestico> ListElec= fachadaPersistencia.getAllElectrodomestico(montoMin, montoMax, ' ');
+return ListElec;
+}
 
 }

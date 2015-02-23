@@ -3,6 +3,9 @@
 	<name>WebTPJava</name>
 	<comment></comment>
 	<projects>
+		<project>TpJ-Entidades</project>
+		<project>Tpj-Negocio</project>
+		<project>TpJ-Datos</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
