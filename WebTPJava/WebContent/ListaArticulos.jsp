@@ -13,6 +13,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+
+<script type="text/css">
+#th
+{
+	style="text-align: center;border: 1px solid black ;"
+}
+
+</script>
 </head>
 <body>
 
@@ -24,23 +32,23 @@
 					<td style="font-weight: 10pt; text-align: center">Rango
 							de valores:</td>
 					<td><input type="text" name="minValue"
-						style="width: 90px; height: 27px;"></td>
+						style="width: 90px; height: 20px;"></td>
 					<td>a</td>
 					<td><input type="text" name="maxValue"
-						style="width: 90px; height: 27px;"></td>
+						style="width: 90px; height: 20px;"></td>
 				</tr>
 				<tr>
 					<td></td>
 					<td></td>
 					<td></td>
-					<td><input type="submit"  value="Buscar" name="btnBuscar"  ></td>
+					<td style="text-align: right;"><input type="submit"  value="Buscar" name="btnBuscar" height="20px"  ></td>
 				</tr>
 			</table>
 		</div>
 		<div>
 		<table>
-		<tr>
-		<th>Codigo</th><th>Tipo</th><th>Descripcion</th><th>Precio</th>
+		<tr >
+		<th >Codigo</th><th>Tipo</th><th>Descripcion</th><th>Precio</th>
 		</tr>
 		
 	 	<% 
@@ -60,11 +68,11 @@
 		for(Electrodomestico ele: lis)
 		{	
 		 %>
-		 <tr>
-		 	<td><%=ele.getCodElectrodomestico() %></td>
-		  	<td><%=ele.getTipo() %></td>
-		   	<td><%=ele.getDescripcion() %></td>
-		    <td><%=ele.getPrecio_base() %></td>		    
+		 <tr >
+		 	<td style="text-align: center;border: 1px solid black;"><%=ele.getCodElectrodomestico() %></td>
+		  	<td style="text-align: center;border: 1px solid black;" ><%=ele.getTipo() %></td>
+		   	<td style="text-align: center;border: 1px solid black;"><%=ele.getDescripcion() %></td>
+		    <td style="text-align: center;border: 1px solid black;"><%=ele.getPrecio_base() %></td>		    
 		 </tr>
 		 <% } }
 		 }

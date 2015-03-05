@@ -65,6 +65,7 @@ public class servListaArticulos extends HttpServlet {
 		try {
 			ArrayList<Electrodomestico> listElectrodomesticos=controlador.getAllElectrodomestico(min, max);
 			session.setAttribute("listElect", listElectrodomesticos);
+			request.getRequestDispatcher("ListaArticulos.jsp").forward(request,response );
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
