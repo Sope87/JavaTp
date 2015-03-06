@@ -16,7 +16,7 @@ public class ControladorElectrodomestico {
 	
 	public void AltaModificacion(String tipo,String desc,String peso,String consumo,String carga,String color,String pulgadas,String precioBase,boolean tdt,Boolean esModificacion,int codEle)
 	{
-		if (tipo=="Lavarropas")
+		if (tipo.equals("Lavarropas"))
 		{
 			Lavarropas lav=null;
 			if(peso.isEmpty() && consumo.isEmpty() && carga.isEmpty() && color.isEmpty()  && precioBase.isEmpty())
@@ -44,7 +44,7 @@ public class ControladorElectrodomestico {
 			else
 				fachadaPersistencia.nuevoLavarropa(lav);
 		}
-		if (tipo=="Television")
+		if (tipo.equals("Television"))
 		{
 			Television Tel=null;
 			if(peso.isEmpty() && consumo.isEmpty() && pulgadas.isEmpty() && color.isEmpty()  && precioBase.isEmpty())

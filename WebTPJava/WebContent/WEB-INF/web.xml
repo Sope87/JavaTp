@@ -14,5 +14,4 @@
     <servlet-name>servListaArticulos</servlet-name>
     <servlet-class>ServletsJava.servListaArticulos</servlet-class>
   </servlet>
-
 </web-app>

@@ -15,10 +15,7 @@
 <title>Insert title here</title>
 
 <script type="text/css">
-#th
-{
-	style="text-align: center;border: 1px solid black ;"
-}
+
 
 </script>
 </head>
